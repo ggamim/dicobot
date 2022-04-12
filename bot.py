@@ -1,7 +1,9 @@
 import discord
+import os
+
 from discord.ext import commands
 bot = commands.Bot(command_prefix='!')
-TOKEN = 'OTYzMTAyNTg2NjQ5NTc5NTQx.YlRNLg.qmr5B13RMN4r3E7Vy0RnjBta1ms'
+TOKEN = 'access_token'
 
 @bot.event
 async def on_ready():
@@ -85,5 +87,5 @@ async def 팝콘(ctx):
 
 
 
-
+access_token = os.environ['BOT_TOKEN']
 bot.run(TOKEN)
